@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Lavishly+Yours&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lavishly+Yours&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EBF2FA;
+    list-style-type: none;
+}
+
+
+.navbar .container-fluid{
+    background: none;
+    padding: 10px;
+}
+.navbar .container-fluid .navbar-brand {
+    color: #000;
+    font-family: Pacifico;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 50px;
+}
+.navbar .container-fluid .navbar-brand span{
+    background: linear-gradient(180deg, #FF9C1A 0%, #ED250A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pacifico;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar .container-fluid .d-flex ul{
+    padding-right: 20px;
+}
+.navbar .container-fluid .d-flex ul{
+    background: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbar .container-fluid .d-flex ul li{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #E1E8EF;
+    text-align: center;
+    margin-left: 28px;
+
+}
+.navbar .container-fluid .d-flex ul li i{
+    background: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: -10px;
+}
+.navbar .container-fluid .d-flex ul li a{
+    background: none;
+    font-size: 12px;
+    color: #0B0909;
+}
+
+                        /* Hover */
+
+
+.navbar .container-fluid .d-flex ul li:hover{
+    border-radius: 15px;
+    background: linear-gradient(91deg, #FF9C1A 7.92%, #E80505 108.2%);
+    color: #E1E8EF;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.42s;
+}
+
+                        /* Hover */
+
+
+            /* Left-side Details */
+.col-md-4{
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding-top: 20px;
+}
+.row.col-md-4 img{
+    
+}
+
+.col-md-4 h5{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #FFF;
+    color: #0B0909;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.525px; /* 125% */
+}
+.col-md-4 p{
+    text-align: center;
+    background-color: #FFF;
+    color: rgba(11, 9, 9, 0.50);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: -10px;
+}
+
+
+.col-md-4 .card-body1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.095px;
+    background-color: #FFF;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.col-md-4 .card-body1 li{
+    padding: 12.671px 18.806px;
+    gap: 8.269px;
+    border-radius: 8.269px;
+    background: #F2F7FC;
+}
+
+
+
+.list-group1{
+    background: none;
+}
+
+
+.list-group1 p i{
+    font-size: 20px;
+    color:#f69515;
+    background: none;
+    padding-right: 10px;
+}
+.list-group1 p{
+    color: rgba(26, 16, 3, 0.50);
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px; 
+}
+
+.list-group1 p{
+    background: none;
+    padding: 5px;
+    
+}
+.list-group1 .name{
+    border-bottom: 1px solid #E3E3E3;
+    border-left: 3px solid #E3E3E3;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.list-group1.download{
+    text-align: center;
+    background: none;
+}
+.list-group1.download button i{
+    background: none;
+}
+.list-group1 button{
+    color: #F2F7FC;
+    align-items: center;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border-radius: 20px;
+    background: linear-gradient(91deg, #FF9C1A 7.92%, #E80505 108.2%);
+    border: none;
+    margin-top: 25px;
+}
+
+
+                        /* About */
+
+
+.container-right{
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    background: #FFF;
+    padding: 15px;
+}
+
+.container-right .about-head h5{
+    color: #0B0909;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+    background: #FFF;
+    padding-left: 20px;
+}
+.container-right p{
+    background: none;
+    color: #000;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    padding-left: 20px;
+}
+.container-right h5{
+    color: #0B0909;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 1px;
+    background: #FFF;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
+.overflow-hidden{
+    background: #FFF;
+}
+.container-right .container .row{
+    background: #FFF;
+}
+
+
+.container-right .container .row .border{
+    border-radius: 20px;
+    background: #FFEBD1;
+    text-align: center;
+    
+    margin-top: 20px;
+}
+
+
+.container-right .container .row .border p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    text-align: start;
+}
+.container-right .container .row .border h3{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-right .container .row .border h3 svg{
+    background: none;
+    margin-right: 10px;
+}
+
+/*
+
