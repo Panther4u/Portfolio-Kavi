@@ -214,7 +214,7 @@
 }
 
 
-                        /* About */
+                        /* About - Start*/
 
 
 .container-right{
@@ -300,7 +300,10 @@
     margin-right: 13px;
 }
 
-                        /* Work */
+                         /* About - End*/
+
+
+                        /* Work - Start*/
 
 
 .container-work{
@@ -386,7 +389,9 @@ nav .container-fluid ul li a{
 }
 
 
-                        /* Resume */
+                         /* Work - End*/
+
+                        /* Resume - Start */
 
 
 .container-resume{
@@ -527,7 +532,10 @@ nav .container-fluid ul li a{
     
 }
 
-                        /* Contact */
+
+                         /* Resume - End */
+
+                        /* Contact - Start*/
 
 
 .container-contact{
@@ -634,3 +642,5 @@ nav .container-fluid ul li a{
     transform: scale(1);
     transition: all 0.42s;
 }
+
+                        /* Contact - End*/
