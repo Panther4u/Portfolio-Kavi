@@ -1,7 +1,6 @@
 var li_elements = document.querySelectorAll(".navbar .container-fluid .d-flex ul li");
 var item_elements = document.querySelectorAll(".item");
-console.log(li_elements)
-console.log(item_elements)
+
     for (var i = 0; i < li_elements.length; i++) {
     li_elements[i].addEventListener("click", function() {
         li_elements.forEach(function(li) {
