@@ -11,34 +11,34 @@
 <body>
     
     <div class="container-fluid" style="background-color: #EBF2FA;">
-        <nav class="navbar">
-            <div class="container-fluid">
+        <nav class="navbar" style="background-color: #F8FBFB;">
+            <div class="container-fluid" style="background: none;">
                 <a class="navbar-brand">KavinKumar <span>Thirumoorthy</span></a>
                 <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="border-radius: 20px; border: none;">
-                        <li class="nav-item">
+                        <li data-li="about" class="active">
                             <i class="bi bi-house"></i>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-li="resume-me">
                             <i class="bi bi-file-earmark-person-fill"></i>
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link">Resume</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-li="work">
                             <i class="bi bi-duffle"></i>
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link">Work</a>
                         </li>
-                        <li class="nav-item">
+                        <li data-li="contact">
                             <i class="bi bi-person-lines-fill"></i>
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="row">
+        <div class="row overall">
             <div class="col-md-4">
-                        <img src="./public/images/Untitled-2-Recovered.png" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; border-radius: 10px;" alt="...">
+                        <img src="/public/images/profile-picture.jpg" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; border-radius: 10px;" alt="...">
                         <h5 class="card-title">KavinKumar Thirumoorthy</h5>
                         <p class="card-text">UI/UX Designer</p>
     
@@ -78,37 +78,33 @@
                         </div>
 
             </div>
-            <div class="col-md-8" style="background-color: #EBF2FA;">
+            <div class="col-md-8 gx-2" style="background-color: #EBF2FA;">
 
-
-                    <div class="container-right">
-                        <div class="about-head">
-                            <h5>ABOUT ME</h5>
-                            <span></span>
-                        </div>
+                <!--About Page-->
+                    <div class="container-right item about" id="about">
+                        <h5 style="border-bottom:2px solid #FF9C1A; width: 50%; padding: 0; margin-left: 20px;">ABOUT ME</h5>
                         <p>Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile
                             full-stack developer with a keen interest in exploring the latest cutting-edge technologies.
                             My journey in the world of web development has been nothing short of exhilarating, and 
                             I constantly strive to enhance my skills and embrace emerging trends in the industry.
                         </p>
-                        <h5>What I do!</h5>
-                            <div class="container overflow-hidden">
+                        <h5 style="border-bottom:2px solid #FF9C1A; width: 50%; padding: 0; margin-left: 20px;">What I do!</h5>
+                            <div class="container">
                                 <div class="row gx-5">
-                                    <div class="col" style="background-color: #FFF;">
-                                        <div class="p-3 border" style="border-radius: 20px;">
-                                    <h3 style="background: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M12.8881 3L14.8481 3.4L11.1081 21L9.14812 20.6L12.8881 3ZM19.5881 12L15.9981 8.41V5.58L22.4181 12L15.9981 18.41V15.58L19.5881 12ZM1.57812 12L7.99813 5.58V8.41L4.40812 12L7.99813 15.58V18.41L1.57812 12Z" fill="#E80505"/>
-                                    </svg>Web Development</h3>
-                                    <p>As a developer, I find myself most 
-                                        captivated by the power and flexibility of 
-                                        NEXT.js. I'm always eager to dive into new
-                                        projects that leverage NEXT.js and 
-                                        discover innovative ways to create fast, 
-                                        scalable, and user-friendly applications.</p>
-                                </div>
-                                </div>
-                                <div class="col" style="background-color: #FFF;">
-                                    <div class="p-3 border" style="border-radius: 20px; background-color:#F2F7FC;">
+                                    <div class="col" style="background-color: #FFEBD1;">
+                                            <h3 style="background: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M12.8881 3L14.8481 3.4L11.1081 21L9.14812 20.6L12.8881 3ZM19.5881 12L15.9981 8.41V5.58L22.4181 12L15.9981 18.41V15.58L19.5881 12ZM1.57812 12L7.99813 5.58V8.41L4.40812 12L7.99813 15.58V18.41L1.57812 12Z" fill="#E80505"/>
+                                            </svg>Web Development</h3>
+                                            <p>As a developer, I find myself most 
+                                                captivated by the power and flexibility of 
+                                                NEXT.js. I'm always eager to dive into new
+                                                projects that leverage NEXT.js and 
+                                                discover innovative ways to create fast, 
+                                                scalable, and user-friendly applications.
+                                            </p>
+
+                                        </div>
+                                <div class="col" style="background-color: #F2F7FC;">
                                         <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <g clip-path="url(#clip0_43_105)">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 5.20435 2.31607 4.44129 2.87868 3.87868C3.44129 3.31607 4.20435 3 5 3H19C19.7956 3 20.5587 3.31607 21.1213 3.87868C21.6839 4.44129 22 5.20435 22 6V18C22 18.7956 21.6839 19.5587 21.1213 20.1213C20.5587 20.6839 19.7956 21 19 21H5C4.20435 21 3.44129 20.6839 2.87868 20.1213C2.31607 19.5587 2 18.7956 2 18V6ZM5 5C4.73478 5 4.48043 5.10536 4.29289 5.29289C4.10536 5.48043 4 5.73478 4 6V18C4 18.2652 4.10536 18.5196 4.29289 18.7071C4.48043 18.8946 4.73478 19 5 19H19C19.2652 19 19.5196 18.8946 19.7071 18.7071C19.8946 18.5196 20 18.2652 20 18V6C20 5.73478 19.8946 5.48043 19.7071 5.29289C19.5196 5.10536 19.2652 5 19 5H5ZM16 7C16 6.73478 16.1054 6.48043 16.2929 6.29289C16.4804 6.10536 16.7348 6 17 6H18C18.2652 6 18.5196 6.10536 18.7071 6.29289C18.8946 6.48043 19 6.73478 19 7C19 7.26522 18.8946 7.51957 18.7071 7.70711C18.5196 7.89464 18.2652 8 18 8H17C16.7348 8 16.4804 7.89464 16.2929 7.70711C16.1054 7.51957 16 7.26522 16 7ZM9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7Z" fill="#FF9C1A"/>
@@ -125,10 +121,10 @@
                                         that make a positive impact on people's 
                                         lives. Let's turn ideas into reality and 
                                         shape the future together.</p>
-                                    </div>
+
                                 </div>
-                                <div class="col" style="background-color: #FFF;">
-                                    <div class="p-3 border" style="border-radius: 20px;">
+                                <div class="col" style="background-color: #F2F7FC;">
+
                                         <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z" stroke="#FF9C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M7 10V12C7 12.5304 7.21071 13.0391 7.58579 13.4142C7.96086 13.7893 8.46957 14 9 14C9.53043 14 10.0391 13.7893 10.4142 13.4142C10.7893 13.0391 11 12.5304 11 12V10M14 10L17 14M14 14L17 10" stroke="#FF9C1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,10 +133,9 @@
                                             interfaces that offer a delightful user 
                                             experience is something I'm truly fanatic 
                                             about.</p>
-                                    </div>
+
                                 </div>
-                                <div class="col" style="background-color: #FFF;">
-                                    <div class="p-3 border" style="border-radius: 20px;background-color:#F2F7FC;">
+                                <div class="col" style="background-color: #FFEBD1;">
                                         <h3><svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
                                             <g clip-path="url(#clip0_43_118)">
                                             <path d="M9.75008 16.5C9.63804 16.5 9.52601 16.5164 9.41914 16.5511C8.81164 16.7484 8.17273 16.875 7.50008 16.875C6.82742 16.875 6.18851 16.7484 5.58054 16.5511C5.47367 16.5164 5.36211 16.5 5.25008 16.5C2.34101 16.5 -0.015393 18.8662 7.57256e-05 21.7791C0.00663823 23.01 1.01867 24 2.25008 24H12.7501C13.9815 24 14.9935 23.01 15.0001 21.7791C15.0155 18.8662 12.6591 16.5 9.75008 16.5ZM7.50008 15C9.98539 15 12.0001 12.9853 12.0001 10.5C12.0001 8.01469 9.98539 6 7.50008 6C5.01476 6 3.00008 8.01469 3.00008 10.5C3.00008 12.9853 5.01476 15 7.50008 15ZM27.7501 0H9.75008C8.50929 0 7.50008 1.04297 7.50008 2.32453V4.5C8.59789 4.5 9.61414 4.81781 10.5001 5.33438V3H27.0001V16.5H24.0001V13.5H18.0001V16.5H14.4263C15.3216 17.2823 15.9788 18.3155 16.2868 19.5H27.7501C28.9909 19.5 30.0001 18.457 30.0001 17.1755V2.32453C30.0001 1.04297 28.9909 0 27.7501 0Z" fill="#E80505"/>
@@ -156,13 +151,283 @@
                                         mentor allows me to give back to the 
                                         community that has supported me 
                                         throughout my career.</p>
-                                    </div>
                                 </div>
                                 </div>
                             </div>
                     </div>
+
+
+
+                <!--Resume Page-->
+                    <div class="container-resume item resume-me" id="resume" style="display: none;">
+                            <h5>Resume</h5>
+                            <span class="line"></span>
+
+                            <div class="container resume-page">
+                                <div class="row gx-3">
+                                    <div class="col" style="background-color: #FFF;">
+                                        <div class="p-3" style="border-radius: 20px;">
+                                            <h2><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                                                <path d="M1.15625 10.6821L13.304 5.82812L25.4517 10.6821L13.304 15.5361L1.15625 10.6821Z" stroke="url(#paint0_linear_157_651)" stroke-width="2.31143" stroke-linejoin="round"/>
+                                                <path d="M25.4492 10.7461V16.0757M6.67578 13.2396V20.4293C6.67578 20.4293 9.45528 23.1643 13.3015 23.1643C17.1483 23.1643 19.9278 20.4293 19.9278 20.4293V13.2396" stroke="url(#paint1_linear_157_651)" stroke-width="2.31143" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_157_651" x1="13.304" y1="5.82812" x2="13.304" y2="15.5361" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF9C1B"/>
+                                                    <stop offset="1" stop-color="#EC1B09"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_157_651" x1="16.0625" y1="10.7461" x2="16.0625" y2="23.1643" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF9C1B"/>
+                                                    <stop offset="1" stop-color="#EC1B09"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>Education</h2>
+
+                                            <div class="container">
+                                                <div class="row gx-5" style="background-color: #FFF;">
+                                                    <div class="col-12" style="background-color: #FFF;">
+                                                        <p>2020-2021</p>
+                                                        <h4>Bachelor of Engineering in Mechanical</h4>
+                                                        <h6>Arulmurugan College of Engineering
+                                                            Anna University</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <p>2012-2015</p>
+                                                        <h4>Diploma in mechanical</h4>
+                                                        <h6>Arulmurugan Polytechnic College</h6>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col" style="background-color: #FFF;">
+                                    <div class="p-3" style="border-radius: 20px;">
+                                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                            <path d="M10.2283 9.88068V7.56924C10.2283 6.95621 10.4719 6.36829 10.9053 5.93482C11.3388 5.50134 11.9267 5.25781 12.5398 5.25781H17.1626C17.7757 5.25781 18.3636 5.50134 18.7971 5.93482C19.2305 6.36829 19.4741 6.95621 19.4741 7.56924V9.88068M5.60547 16.815L9.24597 17.7245C12.9262 18.6444 16.7762 18.6444 20.4564 17.7245L24.0969 16.815" stroke="url(#paint0_linear_157_646)" stroke-width="2.31143" stroke-linecap="round"/>
+                                            <path d="M5.60547 12.1923C5.60547 11.5793 5.84899 10.9913 6.28247 10.5579C6.71595 10.1244 7.30387 9.88086 7.9169 9.88086H21.7855C22.3985 9.88086 22.9864 10.1244 23.4199 10.5579C23.8534 10.9913 24.0969 11.5793 24.0969 12.1923V21.438C24.0969 22.051 23.8534 22.639 23.4199 23.0724C22.9864 23.5059 22.3985 23.7495 21.7855 23.7495H7.9169C7.30387 23.7495 6.71595 23.5059 6.28247 23.0724C5.84899 22.639 5.60547 22.051 5.60547 21.438V12.1923Z" stroke="url(#paint1_linear_157_646)" stroke-width="2.31143" stroke-linejoin="round"/>
+                                            <path d="M14.8471 15.6571C15.4854 15.6571 16.0028 15.1397 16.0028 14.5014C16.0028 13.8631 15.4854 13.3457 14.8471 13.3457C14.2088 13.3457 13.6914 13.8631 13.6914 14.5014C13.6914 15.1397 14.2088 15.6571 14.8471 15.6571Z" fill="url(#paint2_linear_157_646)"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_157_646" x1="14.8512" y1="5.25781" x2="14.8512" y2="18.4144" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF9C1A"/>
+                                                <stop offset="1" stop-color="#E80505"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear_157_646" x1="14.8512" y1="9.88086" x2="14.8512" y2="23.7495" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF9C1A"/>
+                                                <stop offset="1" stop-color="#E80505"/>
+                                            </linearGradient>
+                                            <linearGradient id="paint2_linear_157_646" x1="14.8471" y1="13.3457" x2="14.8471" y2="15.6571" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF9C1A"/>
+                                                <stop offset="1" stop-color="#E80505"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>Experience</h2>
+
+                                        <div class="container">
+                                            <div class="row gx-5" style="background-color: #FFF;">
+                                                <div class="col-12" style="background-color: #FFF;">
+                                                <p>Feb 2023 - Oct 2023</p>
+                                                <h4>Freelancer</h4>
+                                                <h6>Front End Developer & UI / UX Designer</h6>
+                                            </div>
+                                            <div class="col-12">
+                                                <p>July 2022 — February 2023</p>
+                                                <h4>QA Test Engineer</h4>
+                                                <h6>Automotive Robotics India Pvt Ltd, Chennai</h6>
+                                            </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+
+                            
+                            <div class="container skils">
+                                <div class="row gx-3">
+                                    <div class="col" style="background-color: #FFF;">
+                                        <div class="p-3" style="border-radius: 20px;">
+                                            <h1>Work Skills</h1>
+                                            <div class="container">
+                                                <div class="row gx-5" style="background-color: #FFF;">
+                                                    <div class="col-12" style="background-color: #FFF;">
+                                                            <div class="col">HTML 5</div>
+                                                            <div class="col">CSS3</div>
+                                                            <div class="col">Figma</div>
+                                                            <div class="col">Photoshop</div>
+                                                            <div class="col">Adobe XD</div>
+                                                            <div class="col">Bootstrap</div>
+                                                            <div class="col">JavaScript</div>
+                                                            <div class="col">Git</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col" style="background-color: #FFF;">
+                                    <div class="p-3" style="border-radius: 20px;">
+                                        <h1>Soft Skills</h1>
+
+                                        <div class="container" >
+                                            <div class="row gx-5" style="background-color: #FFF;">
+                                                <div class="col-12" style="background-color: #FFF;">
+                                                    <div class="col">Time Management</div>
+                                                    <div class="col">Mentorship</div>
+                                                    <div class="col">Communication</div>
+                                                    <div class="col">Flexibility</div>
+                                                    <div class="col">Research</div>
+                                                    <div class="col">Writing</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                                </div>   
+                            </div>
+                            </div>
+                    </div>
+
+
+
+                <!--Work Page-->
+                    <div class="container-work item work" id="work" style="display: none;">
+                            <h5>Work</h5>
+
+                                <nav class="navbar navbar-expand-lg" style="background: #FFF;">
+                                    <div class="container-fluid justify-content-center">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#all">All</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#appdevelopment">App Development</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#webdevelopment">Web Development</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#ui/ux">UI/UX</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#design">Design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>  
+
+
+                            <div class="container" id="all">
+                                <div class="row">
+                                    <div class="col pot" style="background-color: #FFF; border-radius: 10px;" id="appdevelopment">
+                                        <img src="/public/images/rectangle-20.jpg" alt="" style="border-radius: 5px;" >
+                                        <p>App Development</p>
+                                        <h6>Smart Bank App</h6>
+                                    </div>
+                                    <div class="col pot" style="background-color: #FFF; border-radius: 10px;" id="ui/ux">
+                                        <img src="/public/images/ui-rectangle-20.jpg" alt="" style="border-radius: 5px;">
+                                        <p>UI/UX</p>
+                                        <h6>Rental </h6>
+                                    </div>
+                                    <div class="col pot" style="background-color: #FFF; border-radius: 10px;" id="webdevelopment">
+                                        <img src="/public/images/rectangle-21.jpg" alt="" style="border-radius: 5px;">
+                                        <p>Web Development</p>
+                                        <h6>IdeaFlow</h6>
+                                    </div>
+                                
+                                    <div class="col pot" style="background-color: #FFF; border-radius: 10px;" id="design">
+                                        <img src="/public/images/rectangle-24.png" alt="" style="border-radius: 5px;">
+                                        <p>Blog</p>
+                                        <h6>HTML & CSS3</h6>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+
+
+                <!--Contact Page-->
+                    <div class="container-contact item contact" id="contact" style="display: none;">
+                            <h5>Contact</h5>
+                            <div class="container" id="all">
+                                <div class="row gx-1">
+                                    <div class="col pot" style="background-color: #FFEED9; border-radius: 10px;" id="appdevelopment">
+                                        <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 12C21.9995 9.348 20.9457 6.80477 19.0705 4.92952C17.1952 3.05427 14.652 2.00053 12 2V4C13.5821 4.00036 15.1286 4.46964 16.4441 5.34854C17.7596 6.22744 18.7851 7.47653 19.391 8.938C19.7931 9.90877 20.0001 10.9492 20 12H22ZM2 10V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H8C8.26522 4 8.51957 4.10536 8.70711 4.29289C8.89464 4.48043 9 4.73478 9 5V9C9 9.26522 8.89464 9.51957 8.70711 9.70711C8.51957 9.89464 8.26522 10 8 10H6C6 12.1217 6.84285 14.1566 8.34315 15.6569C9.84344 17.1571 11.8783 18 14 18V16C14 15.7348 14.1054 15.4804 14.2929 15.2929C14.4804 15.1054 14.7348 15 15 15H19C19.2652 15 19.5196 15.1054 19.7071 15.2929C19.8946 15.4804 20 15.7348 20 16V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H14C7.373 22 2 16.627 2 10Z" fill="url(#paint0_linear_108_560)"/>
+                                            <path d="M17.543 9.704C17.8449 10.4318 18.0002 11.2121 18 12H16.2C16.2001 11.4484 16.0916 10.9022 15.8806 10.3926C15.6695 9.88295 15.3602 9.41989 14.9701 9.02986C14.5801 8.63983 14.1171 8.33046 13.6074 8.11944C13.0978 7.90841 12.5516 7.79987 12 7.8V6C13.1867 6.00006 14.3466 6.352 15.3333 7.0113C16.3199 7.6706 17.0889 8.60767 17.543 9.704Z" fill="url(#paint1_linear_108_560)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_108_560" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF9A1A"/>
+                                                <stop offset="1" stop-color="#E80505"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_108_560" x1="15" y1="6" x2="15" y2="12" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF9A1A"/>
+                                                <stop offset="1" stop-color="#E80505"/>
+                                              </linearGradient>
+                                            </defs>
+                                            </svg>Phone: </h4>
+                                            <p style="text-align: start;" class="detailss">+91 8668054205</p>
+                                    </div>
+                                    <div class="col pot" style="background-color: #F2F7FC; border-radius: 10px;">
+                                        <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.7078 13.0953C11.0478 13.0953 10.5078 12.5553 10.5078 11.8953C10.5078 11.2353 11.0478 10.6953 11.7078 10.6953C12.3678 10.6953 12.9078 11.2353 12.9078 11.8953C12.9078 12.5553 12.3678 13.0953 11.7078 13.0953Z" fill="url(#paint0_linear_108_564)"/>
+                                            <path d="M12 17.25C13.3924 17.25 14.7277 16.6969 15.7123 15.7123C16.6969 14.7277 17.25 13.3924 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75C10.6076 6.75 9.27226 7.30312 8.28769 8.28769C7.30312 9.27226 6.75 10.6076 6.75 12C6.75 13.3924 7.30312 14.7277 8.28769 15.7123C9.27226 16.6969 10.6076 17.25 12 17.25ZM12 8.625C13.8375 8.6475 15.33 10.185 15.33 12.0375V12.645C15.33 13.3125 14.7825 13.86 14.115 13.86C13.6575 13.86 13.26 13.605 13.05 13.23C12.705 13.575 12.225 13.7925 11.7 13.7925C10.65 13.7925 9.795 12.9375 9.795 11.8875C9.795 10.8375 10.65 9.9825 11.7 9.9825C12.1575 9.9825 12.57 10.1475 12.9 10.41V10.3425C12.9 10.1475 13.0725 9.99 13.2675 9.99C13.4625 9.99 13.62 10.1475 13.62 10.3425V12.6525C13.62 12.7858 13.6729 12.9136 13.7672 13.0078C13.8614 13.1021 13.9892 13.155 14.1225 13.155C14.2558 13.155 14.3836 13.1021 14.4778 13.0078C14.5721 12.9136 14.625 12.7858 14.625 12.6525V12.045C14.625 10.5675 13.44 9.3525 11.9925 9.33C11.2725 9.33 10.59 9.6 10.08 10.1025C9.57 10.605 9.285 11.28 9.285 12C9.285 13.47 10.485 14.67 11.955 14.67C12.0485 14.67 12.1381 14.7071 12.2043 14.7732C12.2704 14.8394 12.3075 14.929 12.3075 15.0225C12.3075 15.116 12.2704 15.2056 12.2043 15.2718C12.1381 15.3379 12.0485 15.375 11.955 15.375C10.095 15.375 8.58 13.86 8.58 12C8.58 11.0925 8.9325 10.2375 9.585 9.6C10.23 8.955 11.0925 8.61 12 8.625Z" fill="url(#paint1_linear_108_564)"/>
+                                            <path d="M0.750002 5.2575C0.750002 4.4235 1.4235 3.75 2.2575 3.75H21.75C22.5818 3.75 23.25 4.428 23.25 5.2575V18.75C23.25 19.5817 22.572 20.25 21.7425 20.25H2.2575C2.05945 20.2503 1.86329 20.2115 1.68026 20.1359C1.49722 20.0602 1.33092 19.9492 1.19088 19.8091C1.05083 19.6691 0.939804 19.5028 0.86415 19.3197C0.788496 19.1367 0.749705 18.9406 0.750002 18.7425V5.2575ZM2.25 5.25375V5.6265L7.0125 8.661C6.73101 9.07989 6.5037 9.53274 6.336 10.0087L2.25 7.40475V17.01L6.465 14.3243C6.65955 14.7872 6.91153 15.2239 7.215 15.624L2.31 18.75H21.7013L16.7835 15.6202C17.0871 15.2197 17.3391 14.7825 17.5335 14.319L21.75 17.0033V7.41L17.661 10.0125C17.4938 9.53632 17.267 9.08322 16.986 8.664L21.75 5.63325V5.25225L21.747 5.25H2.25375L2.2515 5.2515L2.25075 5.253L2.25 5.25375Z" fill="url(#paint2_linear_108_564)"/>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_108_564" x1="11.7078" y1="10.6953" x2="11.7078" y2="13.0953" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF961A"/>
+                                                <stop offset="1" stop-color="#EC1908"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_108_564" x1="12" y1="6.75" x2="12" y2="17.25" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF961A"/>
+                                                <stop offset="1" stop-color="#EC1908"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint2_linear_108_564" x1="12" y1="3.75" x2="12" y2="20.25" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FF961A"/>
+                                                <stop offset="1" stop-color="#EC1908"/>
+                                              </linearGradient>
+                                            </defs>
+                                            </svg>Email:</h4>
+                                            <p  class="detailss" style="text-align: start; font-size: small;
+                                                ">kavinkumarthirumoorthy <br>2429@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>I am always open to discussing <b>new projects, opportunities in tech world,
+                                            partnerships </b> and more so <b>mentorship.</b> </p>
+
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Name:</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput2" class="form-label">Email:</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                                <button type="submit">Submit</button>
+                                            </form> 
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+
             </div>
         </div>
+
+
+        <script src="new.js"></script>
     </div>
 </body>
 </html>
