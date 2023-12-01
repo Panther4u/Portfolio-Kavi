@@ -1,4 +1,4 @@
-var li_elements = document.querySelectorAll(".navbar .container-fluid .d-flex ul li");
+var li_elements = document.querySelectorAll(".navbar .container-fluid .navbar-nav li");
 var item_elements = document.querySelectorAll(".item");
 
     for (var i = 0; i < li_elements.length; i++) {
@@ -24,3 +24,7 @@ var item_elements = document.querySelectorAll(".item");
         }
     });
     }
+
+    /*
+     */
+    

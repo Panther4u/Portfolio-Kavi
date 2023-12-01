@@ -10,23 +10,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F8FBFB;
+    background-color: #212428;
     list-style-type: none;
     scroll-behavior: smooth;
 }
 
 .navbar .container-fluid{
     background: none;
-    padding: 10px;
+    padding: 8px 15px;
 }
+.navbar .container-fluid button span i{
+    color: #FFFFFF;
+}
+
 .navbar .container-fluid .navbar-brand {
-    color: #000;
+    color: #B5BFCC;
     font-family: Pacifico;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 50px;
     background: none;
 }
 .navbar .container-fluid .navbar-brand span{
@@ -41,56 +44,39 @@
     line-height: normal;
 }
 
-.navbar .container-fluid .d-flex ul{
-    padding-right: 20px;
-}
-.navbar .container-fluid .d-flex ul{
+.navbar .container-fluid ul{
     background: none;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
-.navbar .container-fluid .d-flex ul li{
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    background: #E1E8EF;
+.navbar .container-fluid ul li{
+    background: none;
+    border: none;
+    border-radius: 5px;
     text-align: center;
-    margin-left: 28px;
+}
 
-}
-.navbar .container-fluid .d-flex{
-    background-color: #F8FBFB;
 
-}
-.navbar .container-fluid .d-flex ul li i{
+.navbar .container-fluid .collapse ul li a{
     background: none;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: -10px;
-}
-.navbar .container-fluid .d-flex ul li a{
-    background: none;
-    font-size: 12px;
-    color: #0B0909;
+    margin: 8px 15px;
+
+    font-size: 14px;
+    color: #B5BFCC;
 }
 
                         /* Hover */
 
 
-.navbar .container-fluid .d-flex ul li:hover{
-    border-radius: 15px;
-    background: linear-gradient(91deg, #FF9C1A 7.92%, #E80505 108.2%);
-    color: #E1E8EF;
+.navbar .container-fluid .collapse ul li:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    border-radius: 5px;
+    transform: scale(1.05);
     transition: all 0.42s;
+    border: 2px solid #FD8A18;
 }
+.navbar .container-fluid .collapse ul li a:hover{
+    color: #FD8A18;
+}
+
 
 .list-group1 button:hover{
     cursor: pointer;
@@ -102,61 +88,104 @@
                         /* Hover */
 
 .container-fluid .overall{
-    margin-top: 10px;
-    margin-left: 2px;
-    background-color: #EBF2FA;
-    margin-right: 0px;
+    background-color: #212428;
 }
             /* Left-side Details */
-.col-md-4{
+.overall.col-md-4{
+    background-color: #212428;
+}
+.col-md-4 div{
     text-align: center;
     border-radius: 20px;
-    background-color: #FFF;
+    background-color: #212428;
     padding-top: 20px;
 }
-.row.col-md-4 img{
-    
+
+.col-md-4 img{
+    width: 120px;
+    height: 160px;
+    background: none;
 }
 
 .col-md-4 h5{
     margin-top: 10px;
     text-align: center;
-    background-color: #FFF;
-    color: #0B0909;
+    background-color: #212428;
+    color: #B5BFCC;
     font-family: Raleway;
-    font-size: 25px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.525px; /* 125% */
+}
+.changecontent::after{
+    content: '';
+    color: #ffffff;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+}
+@keyframes changetext{
+    0% {content:"UI/UX Designer.";}
+    50% {content:"Front-End Developer.";}
+}
+.col-md-4 h5 span{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #212428;
+    background: #E80505;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Raleway;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 35.525px; /* 125% */
 }
 .col-md-4 p{
     text-align: center;
-    background-color: #FFF;
-    color: rgba(11, 9, 9, 0.50);
+    background-color: #212428;
+    color: #B5BFCC;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
-    margin-top: -10px;
 }
 
 
-.col-md-4 .card-body1{
+div .card-body1{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 9.095px;
-    background-color: #FFF;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    background-color: #212428;
+    margin-top: -30px;
+    margin-bottom: 10px;
 }
-.col-md-4 .card-body1 li{
+div.card-body1 li{
     padding: 12.671px 18.806px;
     gap: 8.269px;
     border-radius: 8.269px;
-    background: #F2F7FC;
+    background: #212428;
 }
+
+div.card-body1 li a i{
+    background:none;
+    color: #B5BFCC;
+}
+div.card-body1 li a{
+    background:none;
+}
+div.card-body1 li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.42s;
+}
+
 
 
 
@@ -172,7 +201,7 @@
     padding-right: 10px;
 }
 .list-group1 p{
-    color: rgba(26, 16, 3, 0.50);
+    color: #B5BFCC;
     font-family: Raleway;
     font-size: 14px;
     font-style: normal;
@@ -186,7 +215,7 @@
     
 }
 .list-group1 .name{
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #b5bfcc2d;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -199,7 +228,7 @@
     background: none;
 }
 .list-group1 button{
-    color: #F2F7FC;
+    color: #B5BFCC;
     align-items: center;
     display: inline-flex;
     padding: 10px 20px;
@@ -208,53 +237,63 @@
     gap: 10px;
     border-radius: 50px;
     border-radius: 20px;
-    background: linear-gradient(91deg, #FF9C1A 7.92%, #E80505 108.2%);
-    border: none;
-    margin-top: 25px;
+    border: 1px solid #FD8A18;
+    margin-bottom: 15px;
+}
+
+.list-group1 button:hover{
+    transform: scale(1.05);
+    transition: all 0.42s;
+    border: 2px solid #FD8A18;
 }
 
 
-                        /* About - Start*/
+
+
+                        /* About */
 
 
 .container-right{
+    margin-top: 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
-    background: #FFF;
+    background: #212428;
     padding: 15px;
 }
 
 .container-right h5{
-    color: #0B0909;
+    color: #FFFFFF;
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
-    background: #FFF;
+    background: #212428;
     padding: 0;
 }
 
 .container-right p{
     background: none;
-    color: #000;
+    color: #B5BFCC;
     font-family: Raleway;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 187.5% */
     padding-left: 20px;
+    padding-right: 8px;
+    padding-top: 10px;
 }
 .container-right h5{
-    color: #0B0909;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
-    background: #FFF;
+    background: #212428;
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -263,19 +302,26 @@
 
 
 .container .row{
-    background: #FFF;
+    background: #212428;
     text-align: center;
 }
 .container .row .col{
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container .row .col:hover{
+    transform:scale(1.02);
+    transition: all 0.42s ease;
 }
 
 
 .container-right .container .row p{
-    color: #000;
+    color: #B5BFCC;
     font-family: Raleway;
-    font-size: 13px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -283,7 +329,7 @@
     text-align: start;
 }
 .container-right .container .row h3{
-    color: #000;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -293,35 +339,32 @@
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 .container-right .container .row h3 svg{
     background: none;
     margin-right: 13px;
 }
 
-                         /* About - End*/
-
-
-                        /* Work - Start*/
+                        /* Work */
 
 
 .container-work{
     margin-top: 10px;
     border-radius: 20px;
-    background: #FFF;
+    background: #212428;
     padding: 20px;
 }
 
 .container-work h5{
-    color: #0B0909;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
-    background: #FFF;
+    background: #212428;
     padding-left: 0px;
     border-bottom: 2px solid #FF9C1A;
 }
@@ -331,28 +374,21 @@
     margin-left: 20px;
 }
 
-nav .container-fluid ul li{
-    background-color: #FFF;
-}
-nav .container-fluid ul li a{
-    color: #57657A;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    background: none;
+.container-work nav .container-fluid button span{
+    color: #ffffff;
 }
 .container-fluid .row .pot{
     margin: 10px;
-    padding: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .container-fluid .row .pot img{
     padding-top: 20px;
     background: none;
 }
 .container-fluid .row .pot p{
-    color: rgba(26, 16, 3, 0.50);
+    color: #FFF;
     font-family: Poppins;
     font-size: 10px;
     font-style: normal;
@@ -360,11 +396,10 @@ nav .container-fluid ul li a{
     line-height: 16px; /* 160% */
     background: none;
     margin-top: 10px;
-    text-align: start;
-    padding-left: 42px;
+    text-align: center;
 }
 .container-fluid .row .pot h6{
-    color: #1A1003;
+    color: #fff;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -372,44 +407,119 @@ nav .container-fluid ul li a{
     line-height: 16px; /* 100% */
     background: none;
     margin-top: -10px;
-    text-align: start;
-    padding-left: 42px;
+    text-align: center;
 }
 
 
 .container-work .navbar .container-fluid .navbar-nav .nav-item a:hover{
     color: #f69515;
-    transform: scale(1);
-    transition: all 0.42s ease;
-}
-
-.container .row .col img:hover{
     transform: scale(1.1);
     transition: all 0.42s ease;
 }
 
+.container .row .col img:hover{
+    transform: scale(1);
+    transition: all 0.42s ease;
+}
 
-                         /* Work - End*/
 
-                        /* Resume - Start */
+
+
+
+
+
+
+
+.modal .modal-dialog .modal-content .btn-close{
+    background-color: #262a2e;
+    box-shadow:10px 10px 19px #1c1e22,
+                -10px -10px 19px #262a2e;
+                background-color: #b5bfcc3b;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 89%;
+    margin-top: 3%;
+}
+.modal .modal-dialog .modal-content .btn-close{
+    text-align: end;
+}
+
+.modal .modal-dialog .modal-content .container .row .col p{
+    text-align: start;
+}
+.modal .modal-dialog .modal-content .container .row .col h1{
+    text-align: start;
+    font-size: 30px;
+    border: none;
+    width: 100%;
+    padding-top: 15px;
+}
+.modal .modal-dialog .modal-content .container .row .col h3{
+    text-align: start;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    color: #b5bfcc91;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.modal .modal-dialog .modal-content .container .row .col .like{
+    padding-top: 60px;
+    text-align: start;
+    margin-right: -30px;
+    background: none;
+}
+.modal .modal-dialog .modal-content .container .row .col .like a{
+    padding: 18px 25px;
+    box-shadow:10px 10px 19px #1c1e22,
+                -10px -10px 19px #262a2e;
+    margin: 30px;
+    font-size: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #E80505;
+    margin-left: 0px;
+}
+.modal .modal-dialog .modal-content .container .row{
+    background: none;
+}
+.modal .modal-dialog .modal-content .container .row .col .like a i{
+    padding-left: 10px;
+}
+.modal .modal-dialog .modal-content .container .row .col{
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.modal .modal-dialog .modal-content .container .row .col:hover{
+    transform: scale(1);
+}
+
+.modal .modal-dialog .modal-content .container .row .col .like .likes:hover{
+    background-color: #262a2e;
+}
+
+
+                        /* Resume */
 
 
 .container-resume{
     margin-top: 10px;
     border-radius: 20px;
-    background: #FFF;
+    background: #212428;
     padding: 20px;
 }
 
 .container-resume  h5{
-    color: #0B0909;
+    color: #CDCAC4;
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
-    background: #FFF;
+    background-color: #212428;
     padding-left: 0px;
     border-bottom: 2px solid #FF9C1A;
 }
@@ -419,25 +529,24 @@ nav .container-fluid ul li a{
     margin-left: 20px;
 }
 
-
 .container{
     border: none;
-    background-color: #FFF;
+    background-color: #212428;
     
 }
 
 .container.row .col{
     border: none;
-    background-color: #FFF;
+    background-color: #212428;
 }
 
 .row .col .p-3{
     border: none;
-    background-color: #FFF;
+    background-color: #212428;
     
 }
 .row .col .p-3 h2{
-    color: #000;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -447,129 +556,146 @@ nav .container-fluid ul li a{
     text-align: start;
     background: none;
     border-bottom: 1px solid #FF9C1A;
-    width: 60%;
+    width: 80%;
 }
 .row .col .p-3 h2 svg{
     margin-right: 10px;
     background: none;
 }
 .row .col-12{
-    margin-top: 30px;
     border-radius: 10px;
     text-align: start;
     padding: 15px 15px;
     background-color: #FFEED9;
 }
 .row .col-12 p{
-    color: rgba(26, 16, 3, 0.50);
-    font-family: Raleway;
-    font-size: 13.869px;
+    color: #e80505c0;
+    font-family: Poppins;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     background: none;
 }
 .row .col-12 h4{
-    color: #000;
-    font-family: Raleway;
-    font-size: 13.869px;
+    color: #B5BFCC;
+    font-family: Poppins;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     background: none;
 }
 .row .col-12 h6{
-    color: #000;
-    font-family: Raleway;
-    font-size: 13.869px;
+    color: #B5BFCC;
+    font-family: Poppins;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     background: none;
 }
 
 
 .overflow-hidden{
-    background: #FFF;
+    background: #212428;
 }
 .container-right .container .row{
-    background: #FFF;
+    background: #212428;
 }
 
 .skils{
     margin-top: -40px;
 }
 .row-cols-2{
-    background-color: #FFF;
+    background-color: #212428;
 }
 .row .col h1{
-    color: #000;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight:450;
     letter-spacing: 0.693px;
-    background-color: #FFF;
+    background-color: #212428;
     border-bottom: 1px solid #FF9C1A;
     text-align: start;
     width: 60%;
     line-height: 40.229px; /* 166.667% */
 }
 
+
+
 .row .col-12{
     background: none;
-    margin-top: -8px;
+    
 }
 .row .col-12 .col{
     background: none;
-    color: #000;
-    font-family: Raleway;
+    color: #B5BFCC;
+    font-family: poppins;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 200% */
+    line-height: 15px; /* 200% */
     letter-spacing: 0.24px;
-    
+    margin: 0;
+    padding-top: 15px;
+}
+
+.progress-charts .progress .progress-bar{
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgb(240, 41, 129) 0%, rgb(200, 25, 1) 100%);
+    font-size: 7px;
+    text-align: end;
+    position: relative;
+}
+
+.progress-charts .progress{
+    height: 6px;
+    margin-bottom: 10px;
+}
+
+.progress-charts .progress .progress-bar span.percent-label{
+    background: none;
 }
 
 
-                         /* Resume - End */
 
-                        /* Contact - Start*/
+                        /* Contact */
 
 
 .container-contact{
     margin-top: 10px;
     border-radius: 20px;
-    background: #FFF;
+    background: #212428;
     padding: 20px;
 }
 
 .container-contact h5{
-    color: #0B0909;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
-    background: #FFF;
+    background: #212428;
     padding-left: 0px;
     border-bottom: 2px solid #FF9C1A;
 }
 .container .row{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .container-contact h5{
     border-bottom: 2px solid #FF9C1A;
     width: 60%;
     margin-left: 20px;
+
 }
 .container-contact .row .col{
-    text-align: start;
-    padding: 30px;
-    padding-left: 40px;
-    
+    text-align: center;
+    padding-top: 20px;
 
 }
 .container-contact .row .col svg{
@@ -577,7 +703,7 @@ nav .container-fluid ul li a{
     background: none;
 }
 .container-contact .row .col h4{
-    color: #000;
+    color: #B5BFCC;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -585,17 +711,24 @@ nav .container-fluid ul li a{
     line-height: 40px; /* 250% */
     letter-spacing: 0.4px;
     background: none;
+
+}
+.container .row .col p{
+    color: #B5BFCC;
+    font-family: Poppins;
+    
+
 }
 .container-contact .row .col form .mb-3 input{
     border: none;
-    border-bottom: 2px solid #B5B5B5;
+    border-bottom: 1px solid #b5bfcc68;
     background: none;
     margin-bottom: -10px;
-    opacity: 0.2;
-    overflow: hidden;
+    color: #fff;
+    opacity: 0.9;
 }
 .container-contact .row .col form .mb-3 label{
-    color: #000;
+    color: #B5BFCC;
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
@@ -605,13 +738,14 @@ nav .container-fluid ul li a{
 }
 .container-contact .row .col form .mb-3 textarea{
     border: none;
-    border-bottom: 1px solid #B5B5B5;
+    border-bottom: 1px solid #b5bfcc68;
     background: none;
-    opacity: 0.2;
+    opacity: 0.9;
+    color: #fff;
 }
 .container-contact .row .col form button{
     border: none;
-    color: #000;
+    color: #B5BFCC;
     font-family: Raleway;
     font-size: 12px;
     font-style: normal;
@@ -621,6 +755,8 @@ nav .container-fluid ul li a{
     padding: 10px 30px;
     border-radius: 20px;
     border: 1px solid #FD8A18;
+    margin-bottom: 15px;
+    
 }
 .container-contact .container .row .col .detailss{
     text-align: start;
@@ -638,9 +774,54 @@ nav .container-fluid ul li a{
 
 
 .container-contact .row .col form button:hover{
-    background: linear-gradient(91deg, #FF9C1A 7.92%, #E80505 108.2%);
     transform: scale(1);
     transition: all 0.42s;
+    border: 2px solid #FD8A18;
 }
 
-                        /* Contact - End*/
+
+                            /* arrow */
+
+.container-fluid .up-arrow{
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background: none;
+}
+.container-fluid .up-arrow a{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.container-fluid .up-arrow a i{
+    font-size: 45px;
+    border-radius: 50%;
+    border: none;
+    color: #FFFFFF;
+}
+
+
+                                /* footer */
+
+.card-footer{
+    text-align: center;
+    margin-top: 80px;
+    background: none;
+}
+
+.card-footer h1 b{
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #212428;
+    box-shadow:10px 10px 19px #1c1e22,
+                -10px -10px 19px #262a2e;
+}
+.card-footer h1{
+    margin-top: -40px;
+    background: none;
+}
+.card-footer p{
+    font-size: 14px;
+    color: #B5BFCC;
+    margin-top: 40px;
+}
