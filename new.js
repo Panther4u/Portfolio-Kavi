@@ -24,6 +24,7 @@ var item_elements = document.querySelectorAll(".item");
         }
     });
     }
+    
 
 
     function message(){
