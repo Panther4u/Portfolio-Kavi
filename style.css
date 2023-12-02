@@ -400,10 +400,16 @@ div.card-body1 li:hover{
     color: #ffffff;
 }
 .container-fluid .row .pot{
-    margin: 10px;
-    padding: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 10px;
+    padding: 5px 40px;
+    padding-bottom: 70px;
+
+}
+.container-fluid .row .pot:hover{
+    background-color: #262a2e;
+    transform: scale(1.03);
+    transition: all 0.42s ease;
 }
 .container-fluid .row .pot img{
     padding-top: 20px;
@@ -501,21 +507,7 @@ div.card-body1 li:hover{
     margin-left: 0;
 }
 
-@media (max-width:410px) {
-    .container .row .col #port{
-        height: 280px;
-        width: 320px;
-    }
-    .modal .modal-dialog .modal-content .container .row .col a{
-        display: flex;
-        flex-direction: row;
-        padding: 12px ;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        margin-top: 20px;
-    }
-}
+
 .modal .modal-dialog .modal-content .container .row{
     background: none;
 }

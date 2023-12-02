@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    background-image: url(./image/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size:cover;
+    background-position: bottom;
+}
+
+.outer-container{
+    position: relative;
+
+}
+
+.outer-container .logo {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+}
+.outer-container .logo h2{
+   color: white;
+   font-family: fantasy;
+   font-size: 30px;
+   
+}
+
+.outer-container .logo .menu ul{
+    display: flex;
+    align-items: center;
+}
+.outer-container .logo .menu ul li{
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px;
+}
+.outer-container .logo .menu ul li:hover{
+    transition: all 0.42s;
+    transform: scale(1.2);
+}
+.outer-container .logo .menu ul li a{
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}
+
+.outer-container .logo .menu ul li a:hover{
+    color: aqua;
+}
+.outer-container .logo .search_bar{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.outer-container .logo .search_bar i{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding-left: 5px;
+    align-items: center;
+    border-right: 2px solid black;
+    padding-right: 3px;
+    font-size: 20px;
+    
+}
+.outer-container .logo .search_bar input{
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 34px;
+    outline: none;
+    border: none;
+}
+
+.outer-container .banner{
+    position: absolute;
+    color: white;
+    text-align: start;
+    margin: 40px;
+    margin-top: 230px;
+    padding-left: 50px;
+}
+
+.outer-container .banner h6{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.outer-container .banner h1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.outer-container .banner .jab{
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+}
+.outer-container .banner .typing{
+    padding-left: 20px;
+    color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid aqua;
+    animation: typing 5s steps(15) infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 16ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.outer-container .banner .btn{
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.outer-container .banner .btn button{
+    padding: 8px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-image: linear-gradient( 103.9deg,  rgba(12,166,180,1) 3%, rgba(100,51,161,1) 93.9% );
+    color: rgba(255, 255, 255, 0.941);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.outer-container .banner .btn button:hover{
+    transition: all 0.42s;
+    transform: scale(1.1);
+}
+
+.outer-container .social{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    height: inherit;
+    padding: 30px;
+    top: 500px;
+    font-size: 20px;
+}
+
+.outer-container .social i{
+    padding: 10px;
+}
+.outer-container .social i:hover{
+    color: aqua;
+    transition: all 0.42s;
+    transform: scale(1.3);
+}
