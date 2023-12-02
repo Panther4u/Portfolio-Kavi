@@ -220,14 +220,15 @@ div.card-body1 li:hover{
     padding-bottom: 20px;
 }
 
-.list-group1 button{
+.list-group1 a{
     text-align: center;
     background: none;
+    text-decoration: none;
 }
-.list-group1 button i{
+.list-group1 a i{
     background: none;
 }
-.list-group1 button{
+.list-group1 a{
     color: #B5BFCC;
     align-items: center;
     display: inline-flex;
@@ -241,10 +242,11 @@ div.card-body1 li:hover{
     margin-bottom: 15px;
 }
 
-.list-group1 button:hover{
+.list-group1 a:hover{
     transform: scale(1.05);
     transition: all 0.42s;
     border: 2px solid #FD8A18;
+    color: #FD8A18;
 }
 
 
@@ -716,17 +718,18 @@ div.card-body1 li:hover{
 .container .row .col p{
     color: #B5BFCC;
     font-family: Poppins;
-    
-
+}
+.container .row .sms{
+    padding-bottom: 20px;
 }
 .container-contact .row .col form .mb-3 input{
     border: none;
     border-bottom: 1px solid #b5bfcc68;
-    background: none;
     margin-bottom: -10px;
-    color: #fff;
-    opacity: 0.9;
+    color: #B5BFCC;
+    background: none;
 }
+
 .container-contact .row .col form .mb-3 label{
     color: #B5BFCC;
     font-family: Raleway;
@@ -777,6 +780,27 @@ div.card-body1 li:hover{
     transform: scale(1);
     transition: all 0.42s;
     border: 2px solid #FD8A18;
+}
+
+.message .success{
+    color: green;
+    display: none;
+}
+.message .danger{
+    color: red;
+    display: none;
+}
+/*
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
