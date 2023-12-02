@@ -120,7 +120,7 @@
 }
 .changecontent::after{
     content: '';
-    color: #ffffff;
+    color: aqua;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
     font-family: Raleway;
@@ -131,6 +131,7 @@
     0% {content:"UI/UX Designer.";}
     50% {content:"Front-End Developer.";}
 }
+
 .col-md-4 h5 span{
     margin-top: 10px;
     text-align: center;
