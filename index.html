@@ -17,9 +17,9 @@
         <!-- Landing-page  Details End-->
 
         <!--Navbar Start-->
-                <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #212428; box-shadow:10px 10px 19px #1c1e22,
+                <nav class="navbar navbar-expand-lg" style="background-color: #212428; box-shadow:10px 10px 19px #1c1e22,
                 -10px -10px 19px #262a2e;border-radius: 10px;">
-                    <div class="container-fluid">
+                    <div class="container-fluid justify-content-around">
                     <a class="navbar-brand">KavinKumar <span>Thirumoorthy</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span><i class="bi bi-list"></i></span>
@@ -28,16 +28,16 @@
                         
                         <ul class="navbar-nav ">
                             <li data-li="about" class="active">
-                                <a class="nav-link active">About</a>
+                                <a class="nav-link active js-scroll-trigger">About</a>
                             </li>
                             <li data-li="resume-me">
-                                <a class="nav-link">Resume</a>
+                                <a class="nav-link js-scroll-trigger">Resume</a>
                             </li>
                             <li data-li="work">
-                                <a class="nav-link">Portfolio</a>
+                                <a class="nav-link js-scroll-trigger">Portfolio</a>
                             </li>
                             <li data-li="contact">
-                                <a class="nav-link">Contact</a>
+                                <a class="nav-link js-scroll-trigger">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -374,9 +374,9 @@
                 <!--Work Page Start-->
 
                     <div class="container-work item work" id="work" style="display: none;">
-                            <h5>Work</h5>
+                            <h5>Portfolio</h5>
 
-                                <nav class="navbar navbar-expand-lg sticky-top">
+                                <nav class="navbar navbar-expand-lg">
                                     <div class="container-fluid" style="border-radius: 20px; margin-right: 5px;box-shadow:10px 10px 19px #1c1e22,
                                     -10px -10px 19px #262a2e; text-align: center;">
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -709,6 +709,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src="https://smtpjs.com/v3/smtp.js">
         </script>
+
+
+        <script type="text/javascript">    
+            $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+        });
+        </script>
+
         <!--JavaScript End-->
     </div>
 </body>
