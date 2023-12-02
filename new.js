@@ -55,6 +55,11 @@ var item_elements = document.querySelectorAll(".item");
     
     }
 
+    function sendEmail(){  
+        then(
+            message => alert("Message Send Successfully")
+        );
+    }
 
     /*
     function sendEmail(){
