@@ -465,28 +465,41 @@ div.card-body1 li:hover{
     color: #b5bfcc91;
     line-height: 30px;
     padding-top: 20px;
+    margin-bottom:30px;
 }
-.modal .modal-dialog .modal-content .container .row .col .like{
-    padding-top: 60px;
-    text-align: start;
-    margin-right: -30px;
-    background: none;
-}
-.modal .modal-dialog .modal-content .container .row .col .like a{
-    padding: 18px 25px;
+
+
+.modal .modal-dialog .modal-content .container .row .col a{
+    padding: 12px;
     box-shadow:10px 10px 19px #1c1e22,
                 -10px -10px 19px #262a2e;
-    margin: 30px;
     font-size: 13px;
-    border-radius: 8px;
+    border-radius: 4px;
     text-decoration: none;
     color: #E80505;
-    margin-left: 0px;
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+@media (max-width:410px) {
+    .container .row .col #port{
+        height: 280px;
+        width: 320px;
+    }
+    .modal .modal-dialog .modal-content .container .row .col a{
+        display: flex;
+        flex-direction: row;
+        padding: 12px ;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 .modal .modal-dialog .modal-content .container .row{
     background: none;
 }
-.modal .modal-dialog .modal-content .container .row .col .like a i{
+.modal .modal-dialog .modal-content .container .row .col a i{
     padding-left: 10px;
 }
 .modal .modal-dialog .modal-content .container .row .col{
@@ -498,7 +511,7 @@ div.card-body1 li:hover{
     transform: scale(1);
 }
 
-.modal .modal-dialog .modal-content .container .row .col .like .likes:hover{
+.modal .modal-dialog .modal-content .container .row .col .likes:hover{
     background-color: #262a2e;
 }
 
