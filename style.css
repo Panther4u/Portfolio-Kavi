@@ -276,10 +276,11 @@ div.card-body1 li:hover{
 }
 .navbar .container-fluid img{
     display: none;
-    height: 100%; width: 100%; object-fit: cover;  border-radius: 50%; 
-    padding: 0px; 
+    height: 100%; width: 100%; object-fit: cover;  border-radius: 50%;  -webkit-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
+                    -moz-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
+                    box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);padding: 0px; 
     border: none;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-left: ;
 }
 .navbar .container-fluid img:hover{
     border: 3px solid #f69515;
@@ -540,7 +541,9 @@ div.card-body1 li:hover{
 
 .modal .modal-dialog .modal-content .btn-close{
     background-color: #262a2e;
-    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    box-shadow:10px 10px 19px #1c1e22,
+                -10px -10px 19px #262a2e;
+                background-color: #b5bfcc3b;
     padding: 10px;
     border-radius: 50%;
     font-size: 12px;
@@ -575,7 +578,8 @@ div.card-body1 li:hover{
 
 .modal .modal-dialog .modal-content .container .row .col a{
     padding: 12px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow:10px 10px 19px #1c1e22,
+                -10px -10px 19px #262a2e;
     font-size: 13px;
     border-radius: 4px;
     text-decoration: none;
