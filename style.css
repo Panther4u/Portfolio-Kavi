@@ -17,7 +17,7 @@
 
 .navbar .container-fluid{
     background: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
 }
 .navbar .container-fluid button span i{
     color: #FFFFFF;
@@ -63,6 +63,21 @@
     font-size: 14px;
     color: #B5BFCC;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         /* Hover */
 
@@ -256,15 +271,16 @@ div.card-body1 li:hover{
 
 .navbar .container-fluid #profile{
     border: none;
-    width: 30%;
+    width:10%;
+    height: 10%;
 }
 .navbar .container-fluid img{
     display: none;
-    height: 50%; width: 50%; object-fit: cover;  border-radius: 50%;  -webkit-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
+    height: 100%; width: 100%; object-fit: cover;  border-radius: 50%;  -webkit-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
                     -moz-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
                     box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);padding: 0px; 
     border: none;
-    margin-left: 10px;
+    margin-left: ;
 }
 .navbar .container-fluid img:hover{
     border: 3px solid #f69515;
@@ -304,6 +320,11 @@ div.card-body1 li:hover{
         display: block;
 
     }
+    .container-fluid .row .pot{
+        width: 100%;
+        margin-top: 20px;
+    
+    }
 }
 
 
@@ -312,11 +333,12 @@ div.card-body1 li:hover{
 
 
 .container-right{
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 20px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
     background: #212428;
     padding: 15px;
+
 }
 
 .container-right h5{
@@ -465,9 +487,7 @@ div.card-body1 li:hover{
 }
 
 
-@media (max-width:990px) {
-    
-}
+
 
 
 .container-fluid .row .pot:hover{

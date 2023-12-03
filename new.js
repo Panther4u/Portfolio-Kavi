@@ -11,11 +11,14 @@ var item_elements = document.querySelectorAll(".item");
         item_elements.forEach(function(item) {
         item.style.display = "none";
         });
-        if (li_value == "about") {
+        
+        if (li_value == "home") {
         document.querySelector("." + li_value).style.display = "block";
-        } else if (li_value == "resume-me") {
+        } else if (li_value == "about") {
         document.querySelector("." + li_value).style.display = "block";
-        } else if (li_value == "work") {
+        }else if (li_value == "resume-me") {
+        document.querySelector("." + li_value).style.display = "block";
+        }else if (li_value == "work") {
         document.querySelector("." + li_value).style.display = "block";
         } else if (li_value == "contact") {
         document.querySelector("." + li_value).style.display = "block";
