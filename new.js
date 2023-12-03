@@ -25,7 +25,7 @@ var item_elements = document.querySelectorAll(".item");
     });
     }
     
-
+    var profile = document.querySelector(".na")
 
     function message(){
         var Name = document.querySelector(".sms .mb-3 #name").value

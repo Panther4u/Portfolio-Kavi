@@ -31,6 +31,7 @@
     font-weight: 400;
     line-height: normal;
     background: none;
+    margin-left: 10px;
 }
 .navbar .container-fluid .navbar-brand span{
     background: linear-gradient(180deg, #FF9C1A 0%, #ED250A 100%);
@@ -90,6 +91,9 @@
 .container-fluid .overall{
     background-color: #212428;
 }
+
+
+
             /* Left-side Details */
 .overall.col-md-4{
     background-color: #212428;
@@ -250,6 +254,57 @@ div.card-body1 li:hover{
     color: #FD8A18;
 }
 
+.navbar .container-fluid #profile{
+    border: none;
+    width: 30%;
+}
+.navbar .container-fluid img{
+    display: none;
+    height: 50%; width: 50%; object-fit: cover;  border-radius: 50%;  -webkit-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
+                    -moz-box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);
+                    box-shadow: 0px 0px 17px -5px rgba(255,255,255,1);padding: 0px; 
+    border: none;
+    margin-left: 10px;
+}
+.navbar .container-fluid img:hover{
+    border: 3px solid #f69515;
+    transform: scale(1.03);
+    transition: all 0.42s ease;
+}
+
+@media (max-width:560px) {
+    .navbar .container-fluid .navbar-brand {
+        display: none;
+    }
+    .navbar .container-fluid .navbar-brand span{
+        display: none;
+    }
+    .navbar .container-fluid img{
+        display: block;
+    }
+    .col-md-4{
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    .col-md-8{
+        justify-content: center;
+    }
+
+    .navbar .container-fluid .navbar-brand {
+        display: none;
+    }
+    .navbar .container-fluid .navbar-brand span{
+        display: none;
+    }
+    .navbar .container-fluid img{
+        display: block;
+
+    }
+}
 
 
 
@@ -411,11 +466,7 @@ div.card-body1 li:hover{
 
 
 @media (max-width:990px) {
-    .container-fluid .row .pot{
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    
 }
 
 
@@ -467,7 +518,6 @@ div.card-body1 li:hover{
 
 
 
-
 .modal .modal-dialog .modal-content .btn-close{
     background-color: #262a2e;
     box-shadow:10px 10px 19px #1c1e22,
@@ -484,17 +534,17 @@ div.card-body1 li:hover{
 }
 
 .modal .modal-dialog .modal-content .container .row .col p{
-    text-align: start;
+    text-align: center;
 }
 .modal .modal-dialog .modal-content .container .row .col h1{
-    text-align: start;
+    text-align: center;
     font-size: 30px;
     border: none;
     width: 100%;
     padding-top: 15px;
 }
 .modal .modal-dialog .modal-content .container .row .col h3{
-    text-align: start;
+    text-align: center;
     font-size: 18px;
     border: none;
     width: 100%;
@@ -513,8 +563,7 @@ div.card-body1 li:hover{
     border-radius: 4px;
     text-decoration: none;
     color: #E80505;
-    margin-right: 30px;
-    margin-left: 0;
+    margin: 10px;
 }
 
 
@@ -525,7 +574,7 @@ div.card-body1 li:hover{
     padding-left: 10px;
 }
 .modal .modal-dialog .modal-content .container .row .col{
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     padding-top: 30px;
 }
 
@@ -811,6 +860,9 @@ div.card-body1 li:hover{
     letter-spacing: 0.35px;
 }
 
+.container .row .pot{
+    padding: 20px;
+}
 
 .container-contact .row .col form button:hover{
     transform: scale(1);
